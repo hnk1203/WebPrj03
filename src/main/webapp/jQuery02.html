@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+
+    <!-- jquery cdn : jquery 라이브러리를 인터넷에서 다운받겠다. -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+    	$(function () {
+    		alert('gkgkggk');
+    	})
+    	$(function () {
+    	//	$('div').html('<h1>Hello</h1>');
+    	//	$('div').eq(0).html('<h1>Hello</h1>'); //첫번쨰 div만
+    	//	$('div:first-child').css('color','orange');
+    	//	$('div:nth-of-type(1)').css('color','orange');
+    	
+    		$('.item').css('color','orange');
+    		$('.item.select').css('background-color','cyan');
+    		
+    		$('button').on('click', function(){
+    			$('#output').append('<h2>hello</h2>')
+    			$('button').off('click'); // event delete
+    		})
+    		
+    		
+    	})
+    	
+    </script>
+  </head>
+
+  <body>
+  <div class = "item">Div1</div>
+  <div class = "item select">Div1</div>
+  <div class = "item">Div1</div>
+  <div class = "item">Div1</div>
+  <div class = "item">Div1</div>
+  <button>ok</button>
+  <div id="output"></div>
+  </body>
+</html>

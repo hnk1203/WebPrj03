@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.high-light-0 {background-color : red;}
+	.high-light-1 {background-color : orange;}
+	.high-light-2 {background-color : yellow;}
+	.high-light-3 {background-color : green;}
+	.high-light-4 {background-color : blue;}
+	.high-light-5 {background-color : navy;}
+	.high-light-6 {background-color : purple;}
+</style>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+	$(function() {
+		$('h1').each(function(idx, item) {
+			console.log(item);
+			console.log($(item))
+			$(item).addClass('high-light-' + idx);
+		})
+		/*$('h1').addClass((idx)=>{
+			return 'high-light-' + idx;
+		})*/	
+	})
+</script>
+</head>
+<body>
+	<h1>item-0</h1>
+	<h1>item-1</h1>
+	<h1>item-2</h1>
+	<h1>item-3</h1>
+	<h1>item-4</h1>
+	<h1>item-5</h1>
+	<h1>item-6</h1>
+</body>
+</html>

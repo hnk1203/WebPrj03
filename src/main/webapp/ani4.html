@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>무한 스크롤</title>
+  <style>
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(function() {
+      $(window).scroll( function() {
+         var scrollHeight    = $(window).scrollTop() + $(window).height();
+        var documentHeight  = $(document).height();
+        if(  documentHeight - 200 >= scrollHeight ) {
+          for(var i=0;i<20;i++) {
+             $('<h1>Infinity Scroll</h1>').appendTo('body');
+          }        
+        }        
+      }  );
+      
+      for(var i=0;i<20;i++) {
+          $('body').append('<h1>Infinity Scroll</h1>');
+      }   
+   });
+  </script>
+</head>
+<body>
+     
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

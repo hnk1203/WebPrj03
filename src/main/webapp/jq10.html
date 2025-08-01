@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>html5</title>
+  <style>
+     div {
+        width:100px; height:100px;
+       background-color : orange;
+       position : relative;
+    }
+    img { 
+         width:200px; height:200px;
+       position : relative;
+    }
+    
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(function() {
+       $('img').animate({ left  :'+=100'  }, 1000);
+       $('img').animate({ width :'+=100'  }, 2000);
+       $('img').animate({ height :'+=100'  }, 1500);
+      
+      // 7초후에 사라지게 만듬
+      setTimeout( function(){
+         // 에니메이션 큐를 제거한다 
+         $('img').clearQueue();
+         $('img').hide();
+      } , 7 * 1000 );
+   });
+  </script>
+</head>
+<body>
+   <img src="images/Koala.jpg"  />
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
